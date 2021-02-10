@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zip Mar - Cart</title>
+    <!-- links -->
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/adminlte.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="left-dots">
+            <img src="assets/images/Group 125.png" alt="">
+        </div>
+        <div class="middle-circle">
+            <img src="assets/images/Ellipse 12.png" alt="">
+        </div>
+        <div class="triangle-shape">
+            <img src="assets/images/Path 128.png" alt="">
+        </div>
+        
+        <div class="right-stair">
+            <img src="assets/images/Group 137.png" alt="">
+        </div>
+        <div class="right-dotted-circle">
+            <img src="assets/images/Path 127.png" alt="">
+        </div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <a class="navbar-brand p-0 display-hide" href="index.html">
+                <img src="assets/images/logo.png" alt="" >
+            </a>
+            <div class="ms-0 container">
+                <a class="navbar-brand p-0 d-none display-view" href="index.html">
+                    <img src="assets/images/logo.png" alt="" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Beverages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Coupans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=""><img class="me-1" src="assets/images/Group 142.png" alt="">Find a Store</a>
+                        </li>
+                        <li class="icon nav-link">
+                            <div>
+                                <a href="login.html" class="nav-item"><img src="assets/images/Group 193.png" alt=""></a>
+                                <a href="cart.html" class="nav-item"><img src="assets/images/Group 190.png" alt=""></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- cart section -->
+    
+    <section class="cart-section">
+        <div class="left-blue-circle remove-img">
+            <img src="assets/images/Ellipse 5.png" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="heading">
+                        <h2>Your Cart</h2>
+                    </div>
+                    <div class="row">
+                        <div class="title col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 w-auto">
+                                    <p>PRODUCT</p>   
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 w-auto">
+                                    <p>PRICE</p>   
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 w-auto">
+                                    <p>QUANTITY</p>   
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 w-auto">
+                                    <p>SUBTOTAL</p>   
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 ">
+                                    <p class="product-title">
+                                        Product 1
+                                    </p>
+                                    <p class="product-description">
+                                        Pellentesque habitant morbi tristique senectus et netus et 
+                                    </p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 ">
+                                    <p class="product-price d-flex justify-content-between">
+                                        <span class="price-display d-none">PRICE : </span>
+                                        Rs. 899.00
+                                    </p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 ">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="quantity-display d-none"><p>QUANTITY : </p></span>
+                                        <div class="quantity-box d-flex">
+                                            <button onclick="decNum()" class="btn p-0 mr-1"><i class="fas fa-minus-square fa-2x"></i></button>
+                                            <p class="quantity mr-1" id="num">01</p>
+                                            <button onclick="incNum()" class="btn p-0"><i class="fas fa-plus-square fa-2x"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 ">
+                                    <p class="product-total d-flex justify-content-between">
+                                        <span class="total-display d-none">SUBTOTAL : </span>
+                                        Rs. 899.00
+                                    </p>
+                                </div>
+                                <div class="col-lg3 col-md-6">
+                                    <a href="" class="btn dlt-btn"><i class="far fa-trash-alt"></i>Remove</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 ">
+                                    <p class="product-title">
+                                        Product 1
+                                    </p>
+                                    <p class="product-description">
+                                        Pellentesque habitant morbi tristique senectus et netus et 
+                                    </p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 ">
+                                    <p class="product-price d-flex justify-content-between">
+                                        <span class="price-display d-none">PRICE : </span>
+                                        Rs. 899.00
+                                    </p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 ">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="quantity-display d-none"><p>QUANTITY : </p></span>
+                                        <div class="quantity-box d-flex">
+                                            <button onclick="decNum()" class="btn p-0 mr-1"><i class="fas fa-minus-square fa-2x"></i></button>
+                                            <p class="quantity mr-1" id="num">01</p>
+                                            <button onclick="incNum()" class="btn p-0"><i class="fas fa-plus-square fa-2x"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 ">
+                                    <p class="product-total d-flex justify-content-between">
+                                        <span class="total-display d-none">SUBTOTAL : </span>
+                                        Rs. 899.00
+                                    </p>
+                                </div>
+                                <div class="col-lg3 col-md-6">
+                                    <a href="" class="btn dlt-btn"><i class="far fa-trash-alt"></i>Remove</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 ">
+                                    <p class="product-title">
+                                        Product 1
+                                    </p>
+                                    <p class="product-description">
+                                        Pellentesque habitant morbi tristique senectus et netus et 
+                                    </p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 ">
+                                    <p class="product-price d-flex justify-content-between">
+                                        <span class="price-display d-none">PRICE : </span>
+                                        Rs. 899.00
+                                    </p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 ">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="quantity-display d-none"><p>QUANTITY : </p></span>
+                                        <div class="quantity-box d-flex">
+                                            <button onclick="decNum()" class="btn p-0 mr-1"><i class="fas fa-minus-square fa-2x"></i></button>
+                                            <p class="quantity mr-1" id="num">01</p>
+                                            <button onclick="incNum()" class="btn p-0"><i class="fas fa-plus-square fa-2x"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 ">
+                                    <p class="product-total d-flex justify-content-between">
+                                        <span class="total-display d-none">SUBTOTAL : </span>
+                                        Rs. 899.00
+                                    </p>
+                                </div>
+                                <div class="col-lg3 col-md-6">
+                                    <a href="" class="btn dlt-btn"><i class="far fa-trash-alt"></i>Remove</a>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4">
+                    <div class="cart-total">
+                        <div class="d-flex justify-content-between">
+                            <h5>CART TOTALS</h5>
+                            <img src="assets/images/Group 190.png" alt="">
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <p>Subtotal</p>
+                            <p>Rs. 899.00</p>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <p>Total</p>
+                            <p>Rs. 899.00</p>
+                        </div>
+                        <a href="login.html" class="btn proceed-btn">PROCEED CHECKOUT</a>
+                    </div>
+                    <div class="payment-security">
+                        <h5>PAYMENT SECURITY</h5>
+                        <p class="w-75">Encryption ensure increased transaction security. SSL technology protects data linked to personal and payment info</p>
+                        <div class="d-flex justify-content-between ">
+                            <img src="assets/images/authorizenet1.png" alt="">
+                            <img src="assets/images/paypal_logo-300x80.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blue-dot remove-img">
+            <img src="assets/images/Ellipse 7.png" alt="">
+        </div>
+    </section>
+    
+    <!-- footer -->
+
+    <footer>
+        <!-- <img class="footer-design" src="assets/images/Group 173.png" alt=""> -->
+        <div class="container">
+            <div class="row footer-top">
+                <div class="col-lg-3 col-md-6 col-sm-6 width">
+                    <h5>
+                        GET TO KNOW US
+                    </h5>
+                    <ul class="p-0">
+                        <li><a href="">About 7-Eleven</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 width">
+                    <h5>
+                        FRANCHISE INFO
+                    </h5>
+                    <ul class="p-0">
+                        <li><a href="">Our Business Model</a></li>
+                        <li><a href="">Franchise Process</a></li>
+                        <li><a href="">Franchising for Veterans</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 width">
+                    <h5>
+                        HOW CAN WE HELP?
+                    </h5>
+                    <ul class="p-0">
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">New Vendor Information</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 width">
+                    <h5>
+                        DOWNLOAD
+                    </h5>
+                    <ul class="p-0">
+                        <li><a href="">7-Eleven App</a></li>
+                        <li><a href="">7Now Delivery App</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-middle">
+                <div class="col-lg-7 col-md">
+                    <h5>FIND US</h5>
+                    <input class="w-100" type="text" placeholder="Enter Zip, City, State">
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 width">
+                    <h5>See U.S. Locations</h5>
+                    <button class="btn cts-btn">Click to see</button>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 width">
+                    <h5>Follow Us On</h5>
+                    <div class="d-flex">
+                        <a class="me-3" href=""><img src="assets/images/Icon awesome-facebook-square.png" alt=""></a>
+                        <a class="me-3" href=""><img src="assets/images/Icon awesome-instagram.png" alt=""></a>
+                        <a href=""><img src="assets/images/Icon awesome-twitter-square.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class=" footer-bottom">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-4 w-auto mt-3">
+                        <a href="">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 w-auto mt-3">
+                        <a href="">Privacy Policy</a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 w-auto mt-3">
+                        <a href="">California Privacy</a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 w-auto mt-3">
+                        <a href="">Do Not Sell My Personal Information</a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 w-auto mt-3">
+                        <a href="">California Transparency in Supply Chains Act</a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 w-auto mt-3">
+                        <a href="">CA Cleaning Products Right to Know</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- js -->
+
+    <!-- jQuery -->
+    <script>
+        var count = 1;
+        var num = document.getElementById('num');
+        function incNum(){
+            if(count >= 1 && count < 9){
+                count++;
+                num.innerHTML = "0" + count
+            }
+            else{    
+                count++;
+                num.innerHTML = count
+            }
+        }
+        function decNum(){
+            if(count > 1 && count < 11){
+                count--
+                num.innerHTML = "0" + count
+            }
+            else if(count > 1){    
+                count--;
+                num.innerHTML = count
+            }
+            else if(count = 1){
+                num.innerHTML = "0" + 1;
+            }
+        }
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="assets/js/demo.js"></script>
+</body>
+</html>
