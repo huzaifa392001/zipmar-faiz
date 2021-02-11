@@ -23,6 +23,7 @@ header .left-dots{
     left: -95px;
     top: 95px;
     animation-name: left-dots;
+    z-index: -1;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
@@ -245,7 +246,6 @@ header .food-dd {
     padding: 50px;
     background-color: #F2F3F5;
     border: none;
-    border-radius: 5px 25px;
     opacity: 0;
     line-height: 43px;
     font-size: 14px;
@@ -274,7 +274,6 @@ header ul li .bev-dd {
     padding: 50px;
     background-color: #F2F3F5;
     border: none;
-    border-radius: 5px 25px;
     opacity: 0;
     line-height: 43px;
     font-size: 14px;
@@ -422,7 +421,7 @@ header ul .icon div:first-child a{
 .search-section .imgs .bg-img{
     height: 455px;
     width: 255px;
-    background-size: 200%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
