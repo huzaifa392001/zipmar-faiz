@@ -2326,6 +2326,63 @@ section .blue-dot{
     background-size: 100% 100%;
 }
 
+/* order manage page */
+
+.manage-section .order-box{
+    border: 1px solid #DDDDDD;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.manage-section .order-box .order-id .order-num{
+    color: #17599C;
+    font-weight: bold;
+}
+
+.manage-section .order-box .order-date{
+    font-size: 12px;
+}
+
+.manage-section .order-box .manage{
+    color: #8FC539;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.manage-section .order-box .manage:hover{
+    text-decoration: underline!important;
+}
+
+.manage-section .order-box .order-img{
+    height: 100px;
+    width: calc(100% - 48px);
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #DDDDDD;
+}
+
+.manage-section .order-box .order-description{
+    font-size: 14px;
+}
+
+.manage-section .order-box .price{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.manage-section .order-box .state{
+    padding: 5px;
+    background-color: #17599C;
+    width: fit-content;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 12px;
+    margin: auto;
+}
+
 /* css end */
 
 .remove-img{
